@@ -27,7 +27,7 @@ module.exports = function (grunt) {
     },
     connect: {
       options: {
-        port: 8000,
+        port: 80,
         base:'slides',
         // change this to '0.0.0.0' to access the server from outside
         hostname: '0.0.0.0'
@@ -50,5 +50,5 @@ module.exports = function (grunt) {
     }
   });
  
-  grunt.registerTask('default', ['connect:livereload', 'watch']);
+  grunt.registerTask('default', ['connect:livereload', 'open', 'watch']);
 };
