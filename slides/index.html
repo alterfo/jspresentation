@@ -1,0 +1,1585 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html>
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Сайт с нуля</title>
+    <link rel="stylesheet" href="bower_components/reveal.js/css/reveal.min.css">
+    <link rel="stylesheet" href="css/tomorrow-night.css">
+    <link rel="stylesheet" href="css/customTheme.css">
+
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+  <![endif]-->
+    <div class="reveal">
+        <div class="slides">
+
+            <section data-background="#F39C12">
+                <h1>zero to site</h1>
+            </section>
+
+            <section>
+                <section>
+                    <h2>Кто я?</h2>
+                    <ul>
+                        <li class="fragment roll-in">10 лет жизни в web и IT</li>
+                        <li class="fragment roll-in">Сертификат <a href="http://www.ciwcertified.com/certifications/web_foundations_series/associate.php">CIW Web Foundation Associate 1D0-510</a>
+                        </li>
+                        <li class="fragment roll-in">Автор переводов статей о Frontend-разработке для Frontender Magazine</li>
+                        <li class="fragment roll-in">Инженер-системотехник GDC Services LLC</li>
+                        <li class="fragment roll-in">Гик до мозго-костей и просто увлеченный человек</li>
+                    </ul>
+                    <img class="fragment roll-in" src="i/arrow.png" alt="">
+                </section>
+                <section>
+                    <img src="i/apple.png" alt="">
+                </section>
+            </section>
+
+            <section>
+                <h2 class="fragment roll-in">Что здесь будет</h2>
+                <ul class="fragment roll-in">
+                    <li>История веба</li>
+                    <li>Много JavaScript, немного HTML и совсем чуть-чуть CSS</li>
+                    <li>Работа с командной строкой</li>
+                    <li>Современный Workflow</li>
+                </ul>
+                <h2 class="fragment roll-in">Чего здесь не будет</h2>
+                <ul class="fragment roll-in">
+                    <li>Работы с базами данных</li>
+                    <li>Ruby, Java, PHP, Perl, Apache, Nginx</li>
+                    <li>Фреймворков (angularjs, backbonejs, jquery, express, Rails)</li>
+                    <li>MVC</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Простой путь</h2>
+                <ul class="fragment roll-in">
+                    <li>Wix.com</li>
+                    <li>weebly.com</li>
+                    <li><a href="http://inspirationfeed.com/resources/tools/20-free-and-easy-website-building-tools/">Еще 18</a>
+                    </li>
+                </ul>
+                <h2 class="fragment roll-in">Сложный путь</h2>
+                <ul class="fragment roll-in">
+                    <li><a href="http://mkdev.me">http://mkdev.me/</a>
+                    </li>
+                    <li><a href="i/selfEd.pdf">Самообразование веб-разработчика.pdf</a>
+                    </li>
+
+                </ul>
+
+
+            </section>
+
+
+            <section>
+                <section>
+                    <h2>Немного истории</h2>
+                </section>
+
+                <section>
+                    <img src="i/loom.jpg" alt="">
+                    <aside class="notes">
+                        Жаккардова машина (1801). Я не буду рассматривать упрощение механических вычислений. История языков программирования началась с идеи заложить алгоритм действий в носитель и повторно его использовать. При помощи жаккардовой машины можно изготовлять узорчатые платьевые и декоративные ткани, ковры, скатерти используя разработанную "программу". Это было прорывом в деле мануфактуры и рабочие даже устраивали
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Табулятор Холлерита</h2>
+                    <h3>1890</h3>
+                    <img src="i/punchcardH.jpg" alt="">
+                    <aside class="notes">
+                        Табуля́тор — электромеханическая машина, предназначенная для автоматической обработки (суммирования и категоризации) числовой и буквенной информации, записанной на перфокартах, с выдачей результатов на бумажную ленту или специальные бланки.
+                    </aside>
+                </section>
+                <section>
+                    <img src="i/hh-tabulator.gif" alt="">
+                </section>
+                <section>
+                    <img src="i/cardtab.jpg" alt="">
+                </section>
+                <section>
+                    <img src="i/IBM_card_punch_029.JPG" alt="">
+                </section>
+                <section>
+                    <ul>
+                        <li>RAM</li>
+                        <li>Жесткий диск</li>
+                        <li>Сеть</li>
+                        <li>Архив</li>
+                        <li>Интерфейс</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Мэйнфреймы</h2>
+                    <img src="i/ibm_mainframe.jpg" alt="">
+                    <aside class="notes">
+                        Ассемблер первый язык. Множество платформ родилось с различными вариациями. На консоли можно было увидеть каждый шаг выполнения программы.
+                    </aside>
+                </section>
+
+
+                <section>
+                    <img src="i/teletype.jpg" alt="">
+                    <aside class="notes">
+                        Телетайпер - del, backspace IBM 3270 - первый терминал с дисплеем. Нужно было набрать блок информации и нажать кнопку Submit.
+                    </aside>
+                </section>
+
+                <section>
+                    <ul>
+                        <li>ASCII - только английский, только прописные</li>
+                        <li>UNICODE</li>
+                        <li>UTF-8</li>
+                        <li>crlf - Carriage Return Linefeed (hardware + human)</li>
+                    </ul>
+                    <aside class="notes">
+                        Linefeed - вручную открутить бумагу. В html до сих пор используется crlf На механических пишущих машинках был рычаг, который возвращал каретку к левому краю страницы и прокручивал вал, подвигая бумагу вверх на строку. На телетайпах и более поздних алфавитно-цифровых печатающих устройствах (АЦПУ) вместо каретки была головка, в лазерных принтерах она перестала быть материальной, но в термине возврат каретки всё это продолжали называть кареткой, чтобы его не менять. На телетайпах возврат каретки и подачу строки разделили, откуда традиция представления перевода строки как CR+LF перешла и к текстовым файлам.
+                    </aside>
+
+                </section>
+
+                <section>
+                    <h2>Timesharing</h2>
+
+                    <aside class="notes">
+                        Batch mode - последовательный, Timesharing - параллельный. Предпосылки игр, файловых шар, почты, распределенного программирования, чатов, блогов, безопасности пошли с того времени(60-70). Начались разрабатываться редакторы (emacs, vi) Телетайпы со временем заменили дисплеями, но клавиатура осталась. 3270 - терминал (form application -> Submit button).
+                    </aside>
+
+                </section>
+
+                <section>
+                    <h2>Дуглас Энгельбарт</h2>
+                    <img src="i/inventor-mouse.jpg" alt="">
+
+                    <a href="http://web.stanford.edu/dept/SUL/library/extra4/sloan/MouseSite/1968Demo.html">1968Demo</a>
+                    <aside class="notes">
+                        Умер год назад. Дуглас Карл Энгельбарт (англ. Douglas Carl Engelbart; 30 января 1925, Орегон — 2 июля 2013, Атертон[1]) — один из первых исследователей человеко-машинного интерфейса и изобретатель компьютерного манипулятора — мыши[2]. В ряду других его изобретений — графический пользовательский интерфейс, гипертекст, текстовый редактор, групповые онлайн-конференции[1][3]. Видео до сих пор является источником вдохновения многих индустрий.
+                    </aside>
+
+                </section>
+
+                <section>
+                    <h2>Конец инноваций платформ</h2>
+                    <ul>
+                        <li>На сегодня мы имеем небольшой набор архитектур CPU</li>
+                        <ul>
+                            <li>Intel (компьютеры)</li>
+                            <li>PowerPC (игровые консоли)</li>
+                            <li>ARM (мобильные)</li>
+                        </ul>
+
+                        <li>И еще меньше операционных систем</li>
+                        <ul>
+                            <li>Unix 70s</li>
+                            <li>Windows 80s</li>
+                        </ul>
+                    </ul>
+                    <aside class="notes">
+                        Пропустим блок истории развития процессоров и платформ (8bit Z80 vs 8086, крах 16bit Intel архитектур, 32bit 386, выиграла не хорошая архитектура, а совместимая) и перепрыгнем на 10 лет вперед.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Начало инноваций в языках программирования</h2>
+                    <ul>
+                        <li>FORTRAN (IF, DO, *), COBOL (english-like)</li>
+                        <li>BASIC (I/O, номера строк, работа со строками)
+                            <ul>
+                                <li>Business BASIC (key-value)</li>
+                                <li>Microsoft BASIC</li>
+                                <li>Visual BASIC</li>
+                            </ul>
+                        </li>
+                        <li>ALGOL 60 (блоки begin-end, goto-less) -> Pascal</li>
+                        <li>(FORTRAN+BCPL => B) + Pascal => C</li>
+                        <li>ALGOL -> Simula -> Smalltalk (объекты, первый UI (xerox))</li>
+                        <li>C -> Objective-C; Smalltalk -> Ruby</li>
+                        <li>Scheme (функции, методы, замыкания)</li>
+                        <li>С++, Java</li>
+                    </ul>
+                    <aside class="notes">
+                        Atari - игровая консоль, 4к на код, 128 RAM - только на ассемблере. Волшебные цветные вещи. С 50-х ассемблер был нашим всем. В идеале люди хотели чтобы компьютер делал программы за нас.
+
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>HyperCard</h2>
+                    <img src="i/cyberpunkstack.jpg" alt="">
+                    <ul>
+                        <li>Стэк: содержит фоны и карточки</li>
+                        <li>Фон: картинка, кнопки и поля (!)</li>
+                        <li>Карточка: фон, кнопки и поля</li>
+                        <li>Кнопка: текст и/или картинка</li>
+                        <li>Поле: текст</li>
+
+                    </ul>
+
+                    <aside class="notes">
+                        25 лет, кликабельно, первое IDE Вдохновил создание Xanadu.
+                    </aside>
+                </section>
+                <section>
+                    <h2>Xanadu -> WWW</h2>
+                    <ul>
+                        <li>Mosaic (img tag)</li>
+                        <ul>
+                            <li>Netscape Navigator (blink, cookies, script, интерактивность)</li>
+                            <li>Spyglass</li>
+                            <ul>
+                                <li>Internet Explorer</li>
+                            </ul>
+                        </ul>
+                    </ul>
+
+
+
+                    <aside class="notes">
+                        Группа разделилась на две команды. Нетскейп решил взять hypercard и применить это к веб. Они позвали Брэндона Айка и он разработал Javascript. (sun убило Self вместо Java) Он был серверным (да, с тех пор, Netscape Server) Чтобы привлечь как можно больше программистов к плохому языку, они сменили имя на JavaScript (по эксклюзивной лицензии Java, поэтому JScript) и W3C отказали в стардантизации и они пошли в ECMA (eur comp manuf assoc) => ECMAScript. ES3, ES5/Default. В будущем останется только ES5/Strict. Js был написан за пару недель. В то время как Smalltalk 80 разрабатывался 8 лет. Получился хороший язык, на котором может программировать любой, без долгого предварительного изучения. Есть плохие части, но их можно избежать (with, eval). Они решили убить этим микрософт, но микрософт решило сделать JScript.
+                    </aside>
+                </section>
+
+                <section>
+                    <p>Java + Scheme + Self => LiveScript, JavaScript, ECMAScript</p>
+                    <ul>
+                        <li>1999 ES3</li>
+                        <li>2009 ES5 (default > strict)</li>
+                    </ul>
+                </section>
+
+            </section>
+
+            <section data-background="#F39C12">
+
+                <section>
+                    <h2>История развития веб</h2>
+                    <h4>Большой взрыв => Появление человека => Веб-технологии</h4>
+                </section>
+
+                <section>
+                    <h2>История развития веб</h2>
+                    <p>От Web 1.0 до сегодняшних дней</p>
+                    <img src="i/history.png" alt="">
+                </section>
+                <section>
+                    <h2>ARPANET</h2>
+                    <img src="i/arpanet3.gif" alt="">
+                </section>
+                <section>
+                    <h2>Tim Berners-Lee</h2>
+                    <img src="i/timbernerslee.jpeg" alt="">
+                    <aside class="notes">
+                        Сэр Тимоти Джон Бернерс-Ли OM (англ. Sir Timothy John «Tim» Berners-Lee; род. 8 июня 1955 года) — британский учёный, изобретатель URI, URL, HTTP, HTML, изобретатель Всемирной паутины (совместно с Робертом Кайо) и действующий глава Консорциума Всемирной паутины. Автор концепции семантической паутины. Автор множества других разработок в области информационных технологий.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Технологии Web</h2>
+                    <ul>
+                        <li>Web 1.0 - статические веб-сайты, первая бизнес-модель</li>
+                        <ul>
+                            <li>Первый коммерческий сайт - www.amazon.com</li>
+                            <li>В 1994 WWW выросла в 23 раза</li>
+                        </ul>
+                        <li>Web 2.0 - интерактивность (AJAX), социальные сети, гибридные приложения, распространение медиа, онлайн-коммерция, wiki.</li>
+                        <li>Web 3.0 - "Интеллектуальный" веб, машинная переработка для понимания информации, семантический веб, NLP, машинное обучение/принятие решений, системы рекомендаций, Big Data.</li>
+                    </ul>
+                    <aside class="notes">
+                        Браузеры, HTML5, стандарты, технологии.
+                    </aside>
+                </section>
+
+                <section>
+                    <p>Посмотреть как выглядели сайты тогда можно на сайте <a href="http://www.404pagefound.com/">http://www.404pagefound.com/</a>
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Предпосылки Web 2.0</h2>
+                    <ul>
+                        <li>Скорость соединений росла...</li>
+                        <li>Javascript, XML, JSON, AJAX</li>
+                        <li>I-, P-, S- aaS. Облачные технологии.</li>
+                        <li>Мобильные платформы и приложения.</li>
+                        <li>Метаданные, связанные данные и машинная интеллектуальная обработка.</li>
+                    </ul>
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Настоящее и будущее Frontend</h2>
+                    <a href="i/proFrontend.pdf">Развитие frontend-разработки на примере Yahoo</a>
+                </section>
+            </section>
+
+
+
+            <section data-background="#3498DB">
+
+
+
+
+                <section>
+                    <h2></h2>
+                    <ul>
+                        <li>Сегодня мы рассмотрим базовые архитектурные модели и протоколы, которые используются в современной разработке</li>
+                        <li>Далее мы рассмотрим одну из этих моделей более подробно</li>
+                        <li>Построим "простое" приложение используя современный workflow</li>
+                    </ul>
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <img src="i/client-server.png" alt="">
+                </section>
+
+
+                <section>
+                    <cite>Веб-приложение &mdash; доступное пользователям через сеть, открываемое браузером в качестве клиента и состоящее из скриптов, исполняемых на клиенте и сервере, HTML страниц и других ресурсов. Веб-приложение доступно по специфичному пути, например, www.amazon.com.</cite>
+                    <aside class="notes">
+                        Веб-приложения можно опознать по пометке "online"
+                    </aside>
+                </section>
+
+
+                <section>
+                    <h3>Pros and cons</h3>
+                    <p class="fragment roll-in">Преимущества:</p>
+                    <ul class="fragment roll-in">
+                        <li>Повсеместность и удобство использования браузеров</li>
+                        <li>Следовательно, кросплатформенность</li>
+                        <li>Поддержка и обновление приложения без установки</li>
+                        <li>Уменьшение стоимости IT</li>
+                    </ul>
+                    <p class="fragment roll-in">Недостатки:</p>
+                    <ul class="fragment roll-in">
+                        <li>UX не так хорош как в обычных приложениях (уже не так)</li>
+                        <li>Приватность и безопасность данных под угрозой</li>
+                        <li>С точки зрения разработки - трудно разрабатывать и искать ошибки - слишком много меняющихся вещей</li>
+                    </ul>
+                    <aside class="notes">
+
+
+                    </aside>
+                </section>
+
+                <section data-transition="zoom">
+                    <h2>Архитектура Web 1.0</h2>
+                    <img src="i/web10.png" alt="">
+                    <ul>
+                        <li class="fragment roll-in">В основном статические страницы</li>
+                        <li class="fragment roll-in">Нет разделения между данными и представлениями</li>
+                        <li class="fragment roll-in">Браузеры примитивны</li>
+                        <li class="fragment roll-in">100 000 сайтов, 50 000 000 пользователей</li>
+                        <li class="fragment roll-in">Содержимое сайтов генерировали сами создатели</li>
+                    </ul>
+
+
+                </section>
+
+                <section data-transition="zoom">
+                    <h2>Web 1.0 = Read-Only Web</h2>
+                </section>
+
+                <section data-transition="zoom">
+                    <h2>Архитектура Web 2.0 и Web 3.0</h2>
+                    <img src="i/web20.png" alt="">
+                    <ul>
+                        <li class="fragment roll-in">Серверная и клиентская части более функциональны</li>
+                        <li class="fragment roll-in">Браузеры стали лучше поддерживать стандарты</li>
+                        <li class="fragment roll-in">Web 2.0: 1e8 сайтов, 1e9 пользователей</li>
+                        <li class="fragment roll-in">Содержимое сайтов генерирует часть пользователей</li>
+                        <li class="fragment roll-in">Web 3.0: 1e9 сайтов, 2.5e9 пользователей</li>
+                        <li class="fragment roll-in">"Интеллектуальный" веб</li>
+                    </ul>
+
+
+                </section>
+                <section data-transition="zoom">
+                    <img src="i/ibm_watson.jpg" alt="">
+                </section>
+            </section>
+
+
+            <section data-background="#F1C40F">
+                <h2>Среда разработки</h2>
+                <ul>
+                    <li>Браузер Google Chrome/Firefox (+firebug)</li>
+                    <li>Текстовый редактор с подсветкой синтаксиса и расширениями (Sublime Text 2 / Notepad++)</li>
+                    <li>Командная строка + <a href="http://nodejs.org/">nodejs</a>
+                    </li>
+                    <li>Система контроля версий (Git/Mercurial)</li>
+                    <li>Структура файлов и система сборки (grunt, bower, yeoman)</li>
+
+                </ul>
+            </section>
+
+            <section data-background="#000" style="color:#fff">
+                <section>
+                    <h2>Javascript</h2>
+
+                    <aside class="notes">
+                        Брэндону Айку поставили задачу сделать что-то подобное HyperCard.
+                    </aside>
+                </section>
+
+                <section>
+                    <h1>{}</h1>
+                    <ul>
+                        <li><b>get:</b>
+                        </li>
+                        <p>object.name</p>
+                        <p>object[expression]
+                        </p>
+                        <li><b>set:</b>
+                        </li>
+                        <p>object.name = value</p>
+                        <p>object[name] = value</p>
+
+                        <li><b>delete:</b>
+                        </li>
+                        <p>delete object.name</p>
+                        <p>delete object[name]</p>
+
+                    </ul>
+
+                    <aside class="notes">
+                        Яваскрипт это об объектах. Объекто-based, но не ООП. {} -лучше инициализаторов.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Свойство</h2>
+                    <p>Свойство это именованная коллекция аттрибутов</p>
+
+                    <h4>Новое в ES5</h4>
+                    <ul>
+                        <li>enumerable, configurable</li>
+                        <li>get, set(value)</li>
+                        <li>Object.defineProperty(obj, key, descriptor)</li>
+                        <li>Object.defineProperties(obj, obj_descriptors)</li>
+                        <li>Object.getOwnPropertyDescriptor(obj, key)</li>
+                        <li>Object.getOwnProperties(obj)</li>
+                        <li>Object.keys(obj)</li>
+                    </ul>
+
+                    <aside class="notes">
+                        Яваскрипт это об объектах геттеры и сеттеры позволяют менять передаваемые данные (или выдавать null) используйте мудро. value, writeable, enumerable, configurable, get, set. get, set - можно менять значения на лету. У объектов - extensible. Oblect.freeze, preventExtenstion, seal.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Классы и прототипы</h2>
+                    <p>Объекты могут наследоваться от любых объектов, вы можете кастомизировать новые объекты.</p>
+                    <p>У объектов есть аттрибут prototype.</p>
+
+                    <ul>
+                        <li>prototype: object или null</li>
+                        <li>Object.create(object, properties)</li>
+                        <li>Object.getPrototypeOf(obj)</li>
+                        <li>__proto__ - изобретение Mozilla</li>
+                    </ul>
+
+                    <aside class="notes">
+                        Классические языки )),
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Numbers</h2>
+                    <p>64-бит float</p>
+                    <p>IEEE-754 (aka Double)</p>
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Number literals</h2>
+                    <ul>
+                        <li>.01024e4</li>
+                        <li>1.024e+3</li>
+                        <li>10.24E2</li>
+                        <li>102.4E+1</li>
+                        <li>1024.00</li>
+                        <li>1024</li>
+                    </ul>
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <p>a = 0.1;</p>
+                    <p>b = 0.2;</p>
+                    <p>c = 0.3;</p>
+                    <p>(a + b) + c === a + (b + c);</p>
+                    <p>false</p>
+
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Number methods</h2>
+                    <ul>
+                        <li>toExponential</li>
+                        <li>toFixed</li>
+                        <li>toLocaleString</li>
+                        <li>toPrecision</li>
+                        <li>toString</li>
+                        <li>valueOf</li>
+                    </ul>
+
+
+                    <aside class="notes">
+                        Числа - тоже объекты. Значит у них есть методы.
+                    </aside>
+                </section>
+
+                <section>
+                    <pre>
+                       <code data-trim class="javascript hljs">
+if (!Number.prototype.trunc) {
+    Number.prototype.trunc = 
+        function trunc(number) {
+            return Math[
+                number >= 0 ?
+                    'floor' : 'ceil';
+                ](number);
+        };
+}
+                        </code>
+                    </pre>
+
+
+
+                    <aside class="notes">
+                        Расширение объектов
+                    </aside>
+                </section>
+
+
+                <section>
+                    <h2>Math</h2>
+                    <div style="width:50%;float:left;display:block">
+                        <ul>
+                            <li>abs</li>
+                            <li>acos</li>
+                            <li>asin</li>
+                            <li>atan</li>
+                            <li>atan2</li>
+                            <li>ceil</li>
+                            <li>cos</li>
+                            <li>exp</li>
+                            <li>floor</li>
+                        </ul>
+                    </div>
+                    <ul>
+                        <li>log</li>
+                        <li>max</li>
+                        <li>min</li>
+                        <li>pow</li>
+                        <li>random</li>
+                        <li>round</li>
+                        <li>sin</li>
+                        <li>sqrt</li>
+                        <li>tan</li>
+                    </ul>
+
+
+                    <aside class="notes">
+                        Наследие Java.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Math</h2>
+                    <div style="width:50%;float:left;display:block">
+                        <ul>
+                            <li>E</li>
+                            <li>LN10</li>
+                            <li>LN2</li>
+                            <li>LOG10E</li>
+                            <li>LOG2E</li>
+                            <li>PI</li>
+                            <li>SQRT1_2</li>
+                            <li>SQRT2</li>
+                        </ul>
+                    </div>
+                    <pre>
+                       <code data-trim class="javascript hljs">
+function log2(x) {
+    return Math.LOG2E * 
+        Math.log(x);
+}
+                        </code>
+                    </pre>
+
+
+                    <aside class="notes">
+                        Наследие Java. Вроде можно было сделать методы числовых значений, ан нет.
+                    </aside>
+                </section>
+
+
+                <section>
+                    <h2>NaN</h2>
+                    <ul>
+                        <li>Специальное число - не число</li>
+                        <li>Результат ошибочных операций</li>
+                        <li>Токсично: любая операция с NaN вернет NaN</li>
+                        <li>NaN ничему не равно, даже себе</li>
+                        <li>NaN === NaN => false</li>
+                        <li>NaN !== NaN => true</li>
+                        <li>isNaN(NaN) => true</li>
+                    </ul>
+
+                    <aside class="notes">
+                        Плохой стандарт - неравенство. Нет ошибок - есть плохие значения.
+
+                    </aside>
+                </section>
+
+
+                <section>
+                    <h2>Boolean</h2>
+                    <p>true</p>
+                    <p>false</p>
+
+                    <aside class="notes">
+                        Все правильно ))
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>String</h2>
+
+
+                    <aside class="notes">
+                        Почему string? никто не знает. algol 60? последовательность символов.
+                    </aside>
+                </section>
+
+
+
+                <section>
+                    <h2>String</h2>
+
+                    <ul>
+                        <li>Последовательность из 0 или более 16-битного юникода</li>
+                        <ul>
+                            <li>На самом деле UCS-2, не совсем UTF-16</li>
+                            <li>Суррогатные пары не работают</li>
+                        </ul>
+                        <li>Нет отдельного типа - символ. Символ - это строка длины 1.</li>
+                        <li>Строки иммутабельны (заморожены)</li>
+                        <li>Одинаковые строки эквивалентны (===)</li>
+                        <li>Строковый литерал - одинарные или двойные кавычки с \-экранированием</li>
+                    </ul>
+
+                    <aside class="notes">
+                        Иногда неравильно работают пары. Язык разрабатывался до того как расширился utf-8
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Мультистроковые литералы</h2>
+                    <pre>
+                       <code data-trim class="javascript hljs">
+var long_line_1 = "This is a \
+long line"; // ok
+
+var long_line_2 = "This is a \ 
+long line"; // syntax error
+                        </code>
+                    </pre>
+
+
+                    <aside class="notes">
+                        \ - игнорирует linefeed. Не делайте так
+                    </aside>
+                </section>
+
+
+                <section>
+                    <h2>Перевод чисел в строки</h2>
+                    <pre>
+                       <code data-trim class="javascript hljs">
+str = num.toString(0);
+str = String(num);
+                        </code>
+                    </pre>
+
+
+                    <aside class="notes">
+                        Первый может вернуть ошибку.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Перевод строк в числа</h2>
+                    <pre>
+                       <code data-trim class="javascript hljs">
+num = Number(str);
+num = +str;
+num = parseInt(str);
+                    </code>
+                    </pre>
+
+
+                    <aside class="notes">
+                        Первый может вернуть ошибку.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>parseInt(str, 10)</h2>
+
+                    <ul>
+                        <li>Конвертирует значение в число</li>
+                        <li>Останавливается на первом нечисловом значении</li>
+                        <ul>
+                            <li>parseInt("12px") === 12</li>
+                        </ul>
+                        <li>Всегда указывайте систему счисления (10)</li>
+                        <ul>
+                            <li>parseInt("08") === 0</li>
+                            <li>parseInt("08", 10) === 8</li>
+                        </ul>
+                    </ul>
+                    <aside class="notes">
+                        parseInt("08") - ноль в начале воспринимается как 8-ричная система счисления. Поскольку в ней нет 8 - остается только ноль.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Длина строки</h2>
+                    <pre>
+                       <code data-trim class="javascript hljs">
+string.length
+                    </code>
+                    </pre>
+
+
+                    <aside class="notes">
+                        Расширенные символы считаются за 2.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Методы String</h2>
+                    <div style="width:50%;float:left;display:block">
+                        <ul>
+                            <li>charAt</li>
+                            <li>charCodeAt</li>
+                            <li>compareLocale</li>
+                            <li>concat</li>
+                            <li>indexOf</li>
+                            <li>lastIndexOf</li>
+                            <li>localeCompare</li>
+                            <li>match</li>
+                            <li>replace</li>
+                            <li>search</li>
+                        </ul>
+                    </div>
+                    <ul>
+                        <li>slice</li>
+                        <li>split</li>
+                        <li>substring</li>
+                        <li>toLocaleLowerCase</li>
+                        <li>toLocaleUpperCase</li>
+                        <li>toLowerCase</li>
+                        <li>toString</li>
+                        <li>toUpperCase</li>
+                        <li>trim (es5)</li>
+                        <li>valueOf</li>
+                    </ul>
+
+
+
+                    <aside class="notes">
+                        Много функций, важные - toUpperCase, toLowerCase, trim(es5)
+                    </aside>
+                </section>
+
+
+
+
+                <section>
+                    <h2>trim</h2>
+                    <pre>
+                       <code data-trim class="javascript hljs">
+if (typeof String.prototype.trim !== 'function') {
+    String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g, '');
+    }
+}
+                    </code>
+                    </pre>
+
+
+                    <aside class="notes">
+                        Если в браузере нет поддержки trim, Javascript дает возможность сделать это самому. Причем, скрипт ничего не делает если trim уже есть.
+
+                    </aside>
+                </section>
+
+
+                <section>
+                    <h2>supplant</h2>
+                    <pre>
+                       <code data-trim class="javascript hljs">
+if (typeof String.prototype.supplant !== 'function') {
+    String.prototype.supplant = function (o) { 
+        return this.replace( 
+            /{([^{}]*)}/g, 
+            function (a, b) { 
+            var r = o[b]; 
+            return typeof r === 'string' || 
+                typeof r === 'number' ? 
+                r : a; 
+        }); 
+    };
+}
+                    </code>
+                    </pre>
+
+
+                    <aside class="notes">
+                        supplant - ищет в тексте {} и подставляет значения переменных.
+
+                    </aside>
+                </section>
+
+
+
+                <section>
+                    <h2>Array</h2>
+
+
+
+                    <aside class="notes">
+                        Последовательность ячеек памяти с индексами. Массивы одинаковы почти во всех языках. Яваскрипт решил пойти другим путем.
+                    </aside>
+                </section>
+
+
+                <section>
+                    <h2>Array</h2>
+
+
+                    <ul>
+                        <li>Массивы наследуются от объекта</li>
+                        <li>Индексы - строковые, используются как ключи</li>
+                        <li>Эффективно для разряженных масивов</li>
+                        <li>Неффективно во всех других случаев</li>
+                        <li>Преимущество: не нужно указывать размер массива при создании</li>
+                    </ul>
+
+
+                    <aside class="notes">
+                        sparse arrays - практически не используются
+                    </aside>
+                </section>
+
+
+                <section>
+                    <h2>length</h2>
+
+
+                    <ul>
+                        <li>В отличие от объектов у массивов есть длина</li>
+                        <li>Это значение на 1 больше последнего значимого индекса</li>
+                        <li>Это позволяет использовать традиционный for:
+                            <pre>
+                       <code data-trim class="javascript hljs">
+for (var i = 0; i < a.length; i += 1) {
+    ...
+}
+                    </code>
+                    </pre>
+
+                        </li>
+                        <li>Не стоит использовать for in с массивами</li>
+                    </ul>
+
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+                <section>
+                    <h2>Литералы массивов</h2>
+
+
+                    <ul>
+                        <li>[]</li>
+                        <li>Может содержать любое количество выражений, разделенных запятыми:
+                            <pre>
+                       <code data-trim class="javascript hljs">
+myList = ['cats', 'peas', 'beans'];
+                    </code>
+                    </pre>
+                        </li>
+                        <li>Можно добавлять новые значения:
+                            <pre>
+                       <code data-trim class="javascript hljs">
+myList[myList.length] = 'barley';
+                    </code>
+                    </pre>
+                        </li>
+
+                    </ul>
+
+
+                    <aside class="notes">
+                        Нет границ. myList.1 не сработает
+                    </aside>
+                </section>
+
+
+                <section>
+                    <h2>Методы массивов</h2>
+
+                    <div style="width:50%;float:left;display:block">
+                        <ul>
+                            <li>concat</li>
+                            <li>every</li>
+                            <li>filter</li>
+                            <li>forEach</li>
+                            <li>indexOf</li>
+                            <li>join</li>
+                            <li>lastIndexOf</li>
+                            <li>map</li>
+                            <li>pop</li>
+                            <li>push</li>
+                        </ul>
+                    </div>
+                    <ul>
+                        <li>reduce</li>
+                        <li>reduceRigth</li>
+                        <li>reverse</li>
+                        <li>shift</li>
+                        <li>slice</li>
+                        <li>some</li>
+                        <li>splice</li>
+                        <li>toLocaleString</li>
+                        <li>toString</li>
+                        <li>unshift</li>
+                    </ul>
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+                <section>
+                    <h2>sort</h2>
+                    <pre>
+                       <code data-trim class="javascript hljs">
+var n = [4, 8, 15, 16, 23, 42];
+n.sort() // => [15, 16, 23, 4, 42, 8];
+                    </code>
+                    </pre>
+
+                    <aside class="notes">
+                        видите ошибку? можно вставить свою функцию сравнения
+                    </aside>
+                </section>
+
+
+                <section>
+                    <h2>Удаление элементов</h2>
+                    <pre>
+                       <code data-trim class="javascript hljs">
+delete array[number]
+
+                    </code>
+                    </pre>
+                    <p>Удаляет элемент, но оставляет дыру в нумерации</p>
+
+                    <pre>
+                       <code data-trim class="javascript hljs">
+array.splice(number, 1)
+
+                    </code>
+                    </pre>
+                    <p>Удаляет элемент и сдвигает следующие за ним</p>
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+
+                <section>
+                    <h2>Пример</h2>
+                    <pre>
+                       <code data-trim class="javascript hljs">
+myArray = ['a', 'b', 'c', 'd'];
+delete myArray[1]; // ['a', undefined, 'c', 'd']
+myArray.splice(1, 1); // ['a', 'c', 'd']
+
+                    </code>
+                    </pre>
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+
+                <section>
+                    <h2>Массивы vs Объекты</h2>
+
+                    <ul>
+                        <li>Используйте объекты когда нужны именованные свойства</li>
+                        <li>Используйте массивы когда вам нужна упорядоченность элементов</li>
+                        <li>Здесь нет ассоциативных массивов, вместо них - объекты</li>
+                        <li></li>
+                    </ul>
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Date</h2>
+
+                    <aside class="notes">
+                        Основана на классе Java Date (1995). Y2K проблемы в JS решены
+                    </aside>
+                </section>
+                <section>
+                    <h2>RegExp</h2>
+                    <p>
+                        [a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?
+                    </p>
+
+                    <aside class="notes">
+                        Популярно, но неюзабельно.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Функции</h2>
+
+                    <p>Лучшая и сложная часть языка, поговорим о них немного позже</p>
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>null</h2>
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+                <section>
+                    <h2>undefined</h2>
+
+                    <aside class="notes">
+                        инициализация переменной пределяет ее значение как undefined несуществующие значения объектов
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>typeof</h2>
+                    <table>
+                        <tr>
+                            <td>Тип</td>
+                            <td>typeof</td>
+                        </tr>
+                        <tr>
+                            <td>object</td>
+                            <td>'object'</td>
+                        </tr>
+                        <tr>
+                            <td>function</td>
+                            <td>'function'</td>
+                        </tr>
+                        <tr>
+                            <td>array</td>
+                            <td>'object'</td>
+                        </tr>
+                        <tr>
+                            <td>number</td>
+                            <td>'number'</td>
+                        </tr>
+                        <tr>
+                            <td>string</td>
+                            <td>'string'</td>
+                        </tr>
+                        <tr>
+                            <td>boolean</td>
+                            <td>'boolean'</td>
+                        </tr>
+                        <tr>
+                            <td>null</td>
+                            <td>'object'</td>
+                        </tr>
+                        <tr>
+                            <td>undefined</td>
+                            <td>'undefined'</td>
+                        </tr>
+                    </table>
+                    <aside class="notes">
+                        микрософт все скопировало как есть. в es5 есть isArray.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Правда и кривда</h2>
+                    <h3>Falsy</h3>
+                    <ul>
+                        <li>false</li>
+                        <li>null</li>
+                        <li>undefined</li>
+                        <li>""</li>
+                        <li>0</li>
+                        <li>NaN</li>
+                    </ul>
+
+                    <h3>Все остальное - Truthy</h3>
+                    <p>"0", "false", [], {}</p>
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <p>Любой тип данных может быть передан переменной, отправлен параметром в функцию или быть значением в объекте.</p>
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Копирование объектов</h2>
+
+                    <ul>
+                        <li>Объекты могут быть переданы функции и могут быть возвращены функцией</li>
+                        <ul>
+                            <li>Объекты передаются по ссылке</li>
+                            <li>Объекты не передаются по значению</li>
+                        </ul>
+                        <li>=== сравнивает ссылки на объект, но не объекты</li>
+                    </ul>
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+</section>
+<section>
+
+
+                <section>
+                    <h2>C</h2>
+                    <p>Синтаксически JavaScript близок к семейству C. Разница в системе типов данных, в которой функции могут быть значениями.</p>
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+                <section>
+                    <h2>Идентификаторы</h2>
+                    <ul>
+                        <li>Начинаются с буквы, _ или $</li>
+                        <li>Далее 0 или более букв, _ или $</li>
+                        <li>По соглашению, все переменные, параметры, имена функций начинаются с маленькой буквы</li>
+                        <li>Кроме конструкторов - они начинаются с заглавной</li>
+                        <li>Начальная _ - зарезервирована для скрытых реализаций</li>
+                        <li>$ - кодогенераторы</li>
+                    </ul>
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+                <section>
+                    <h2>+</h2>
+
+
+                    <ul>
+                        <li>Результат зависит от типа - сложение, конкатенация</li>
+                        <li>Если оба оператора - числа, складывает</li>
+                        <li>Если нет - переводит все в строки и склеивает</li>
+                    </ul>
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>унарный +</h2>
+                    <pre>
+                       <code data-trim class="javascript hljs">
++"42" + (+"42") === 84
+                    </code>
+                    </pre>
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>/</h2>
+
+
+                    <ul>
+                        <li>Деление двух целых может давать нецелое</li>
+                        <pre>
+                       <code data-trim class="javascript hljs">
+10 / 3 = 3.3333333333333335
+10 / 0 = Infinity
+                    </code>
+                    </pre>
+                    </ul>
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>%</h2>
+
+
+                    <ul>
+                        <li>Остаток от деления</li>
+                        <pre>
+                       <code data-trim class="javascript hljs">
+-1 % 8 // -1, не 7
+                    </code>
+                    </pre>
+                    </ul>
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+                <section>
+                    <h2>==, !=</h2>
+
+
+                    <ul>
+                        <li>Равно и не равно</li>
+                        <li>Возможны межтипные сравнения</li>
+                        <li>Всегда лучше использовать === и !==</li>
+                    </ul>
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Примеры</h2>
+
+
+                    <ul>
+                        <li>'' == '0' // false</li>
+                        <li>0 == '' // true</li>
+                        <li>0 == '0' // true</li>
+                        <li>false == 'false' // false</li>
+                        <li>false == '0' // true</li>
+                        <li>false == undefined // false</li>
+                        <li>false == null // false</li>
+                        <li>null == undefined // true</li>
+                        <li>' \t\r\n' == 0 // true</li>
+                    </ul>
+                    <aside class="notes">
+                        ===
+                    </aside>
+                </section>
+
+
+                <section>
+                    <h2>&&</h2>
+
+
+                    <ul>
+                        <li>Логическое И</li>
+                        <li>Если первое выражение truthy, результат - второй оператор, иначе - первый.</li>
+                        <pre>
+                       <code data-trim class="javascript hljs">
+// чтобы избежать ссылки на null
+if (a) {
+    return a.number;
+} else {
+    return a;
+}
+// может быть перезаписано как
+return a && a.number
+                    </code>
+                    </pre>
+                    </ul>
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+
+                <section>
+                    <h2>||</h2>
+
+                    <ul>
+                        <li>Оператор "по умолчанию", логическое ИЛИ
+                            <pre>
+                       <code data-trim class="javascript hljs">
+var last = input || nr_items;
+                    </code>
+                    </pre>
+
+                        </li>
+                        <li>Если первое - правда, тогда результат первый оператор, если нет - второй</li>
+                    </ul>
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>!</h2>
+
+                    <ul>
+                        <li>логическое НЕ</li>
+                        <li>если операнд truthy, результат - false, иначе - true</li>
+                        <li>!! - порождает Boolean</li>
+                    </ul>
+
+                    <aside class="notes">
+bang-bang
+                    </aside>
+                </section>
+                <section>
+                    <h2>Побитовые операторы</h2>
+                    <p>& | ^ >> >>> <<</p>
+                    <ul>
+                        <li>Побитовые операторы конвертируют операнды в 32-битное целое число и возвращают результат в виде 64-битного float</li>
+                    </ul>
+
+                    <aside class="notes">
+shift иногда быстрее умножения
+                    </aside>
+                </section>
+</section>
+<section>
+
+                <section>
+                    <h2>Выражения</h2>
+
+                    <ul>
+                        <li><i>expression</i></li>
+                        <li>if</li>
+                        <li>switch</li>
+                        <li>while</li>
+                        <li>do</li>
+                        <li>for</li>
+                        <li>break</li>
+                        <li>continue</li>
+                        <li>return</li>
+                        <li>try/throw</li>
+                    </ul>
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <h2></h2>
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+                <section>
+                    <h2></h2>
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+                <section>
+                    <h2></h2>
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+                <section>
+                    <h2></h2>
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+                <section>
+                    <h2></h2>
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+                <section>
+                    <h2></h2>
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+                <section>
+                    <h2></h2>
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+                <section>
+                    <h2></h2>
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+                <section>
+                    <h2></h2>
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+                <section>
+                    <h2></h2>
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+                <section>
+                    <h2></h2>
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+                <section>
+                    <h2></h2>
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+
+
+
+            </section>
+
+
+
+
+
+            <section>
+                <h2>Полезные ресурсы</h2>
+                <ul>
+                    <li>[developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web)</li>
+                </ul>
+            </section>
+
+
+            <section>
+                <ul>
+                    <li>[kalinon7@gmail.com](mailto:kalinon7@gmail.com)</li>
+                    <li>[@argentumus](http://twitter.com/argentumus)</li>
+                    <li>http://github.com/amIwho/</li>
+                </ul>
+            </section>
+
+            <script src="bower_components/reveal.js/lib/js/head.min.js"></script>
+            <script src="bower_components/reveal.js/js/reveal.min.js"></script>
+            <script>
+            Reveal.initialize({
+                transition: 'concave', // default/cube/page/concave/zoom/linear/fade/none
+                transitionSpeed: 'fast',
+                backgroundTransition: 'concave',
+                progress: true,
+                overview: true,
+                touch: true,
+                dependencies: [
+                    // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
+                    {
+                        src: 'bower_components/reveal.js/lib/js/classList.js',
+                        condition: function() {
+                            return !document.body.classList;
+                        }
+                    },
+
+                    // Interpret Markdown in <section> elements
+                    {
+                        src: 'bower_components/reveal.js/plugin/markdown/marked.js',
+                        condition: function() {
+                            return !!document.querySelector('[data-markdown]');
+                        }
+                    }, {
+                        src: 'bower_components/reveal.js/plugin/markdown/markdown.js',
+                        condition: function() {
+                            return !!document.querySelector('[data-markdown]');
+                        }
+                    },
+
+                    // Syntax highlight for <code> elements
+                    {
+                        src: 'bower_components/reveal.js/plugin/highlight/highlight.js',
+                        async: true,
+                        callback: function() {
+                            hljs.initHighlightingOnLoad();
+                        }
+                    },
+
+                    // Zoom in and out with Alt+click
+                    {
+                        src: 'bower_components/reveal.js/plugin/zoom-js/zoom.js',
+                        async: true,
+                        condition: function() {
+                            return !!document.body.classList;
+                        }
+                    },
+
+                    // Speaker notes
+                    {
+                        src: 'bower_components/reveal.js/plugin/notes/notes.js',
+                        async: true,
+                        condition: function() {
+                            return !!document.body.classList;
+                        }
+                    },
+                ]
+            });
+             //Current slide you can define via Reveal.getIndices();
+            Reveal.slide(8, 29);
+            </script>
+
+</body>
+
+</html>
