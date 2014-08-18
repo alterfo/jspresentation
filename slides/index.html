@@ -109,6 +109,8 @@
                     <img src="i/punchcardH.jpg" alt="">
                     <aside class="notes">
                         Герман Холлерит. Табуля́тор — электромеханическая машина, предназначенная для автоматической обработки (суммирования и категоризации) числовой и буквенной информации, записанной на перфокартах, с выдачей результатов на бумажную ленту или специальные бланки.
+
+                        Первый комплекс оборудования не имел специального перфоратора, а использовал пробойник кондуктора в поездах. Карточки сортировались электрическим способом, но подача, выемка и перемещение в сортировочный ящик осуществлялись вручную. Применение данной системы резко ускорило процесс обработки статистики и позволило получить первые результаты (в частности, количество населения) через несколько недель после проведения переписи. Первая система Холлерита позволяла только подсчитывать количество карточек с определенными комбинациями пробивок. Сами карточки для каждого применения были различных размеров, зоны пробивок могли размещаться в различных частях карты.
                     </aside>
                 </section>
                 <section>
@@ -116,6 +118,11 @@
                 </section>
                 <section>
                     <img src="i/cardtab.jpg" alt="">
+                    <aside class="notes">
+                        Долгое время бумажные носители были наиболее удобным способом ввода информации(по сравнению с переключением контактных коммутаторов на наборных досках) и единственным способом хранения. Причём казались настолько неколебимыми, что даже в научной фантастике сложные системы работали на них. Так позитронные мозги роботов Азимова исходно кодировались с перфолент, а супермашины, заменившие людей по всем параметрам в Механическом Пианино Воннегута, принимали данные с перфокарт.
+
+                        Цифры. буквы и другие символы перфорируются на карте в 80 вертикальных колонок в соответствии с кодом. предложенным Холлеритом. Цифра кодируется одним отверстием в одной из горизонтальных нижних строк, буква — двумя отверстиями: одно расположено в так называемой числовой строке, другое — в одной из трех «зонных строк» в верхней части карты; другие символы кодируются двумя и более отверстиями.
+                    </aside>
                 </section>
                 <section>
                     <img src="i/IBM_card_punch_029.JPG" alt="">
@@ -223,7 +230,7 @@
                     </ul>
 
                     <aside class="notes">
-                        25 лет, кликабельно, первое IDE Вдохновил создание Xanadu.
+                        С 87 года, 25 лет, кликабельно, первое IDE Вдохновил создание Xanadu как альтернативу WWW с возможностью просмотра истории изменений.
                     </aside>
                 </section>
                 <section>
@@ -242,6 +249,8 @@
 
 
                     <aside class="notes">
+                        Основными разработчиками браузера были Марк Андерссен и Эрик Бина, работавшие в Национальном центре суперкомпьютерных приложений Иллинойского университета в Урбана-Шампейн.
+                        
                         Группа разделилась на две команды. Нетскейп решил взять hypercard и применить это к веб. Они позвали Брэндона Айка и он разработал Javascript. (sun убило Self вместо Java) Он был серверным (да, с тех пор, Netscape Server) Чтобы привлечь как можно больше программистов к плохому языку, они сменили имя на JavaScript (по эксклюзивной лицензии Java, поэтому JScript) и W3C отказали в стардантизации и они пошли в ECMA (eur comp manuf assoc) => ECMAScript. ES3, ES5/Default. В будущем останется только ES5/Strict. Js был написан за пару недель. В то время как Smalltalk 80 разрабатывался 8 лет. Получился хороший язык, на котором может программировать любой, без долгого предварительного изучения. Есть плохие части, но их можно избежать (with, eval). Они решили убить этим микрософт, но микрософт решило сделать JScript.
                     </aside>
                 </section>
@@ -518,7 +527,7 @@
 
                 <section>
                     <pre>
-                       <code data-trim class="javascript hljs">
+                       <code data-trim contenteditable class="javascript hljs">
 if (!Number.prototype.trunc) {
     Number.prototype.trunc = 
         function trunc(number) {
@@ -587,7 +596,7 @@ if (!Number.prototype.trunc) {
                         </ul>
                     </div>
                     <pre>
-                       <code data-trim class="javascript hljs">
+                       <code data-trim contenteditable class="javascript hljs">
 function log2(x) {
     return Math.LOG2E * 
         Math.log(x);
@@ -665,7 +674,7 @@ function log2(x) {
                 <section>
                     <h2>Мультистроковые литералы</h2>
                     <pre>
-                       <code data-trim class="javascript hljs">
+                       <code data-trim contenteditable class="javascript hljs">
 var long_line_1 = "This is a \
 long line"; // ok
 
@@ -684,7 +693,7 @@ long line"; // syntax error
                 <section>
                     <h2>Перевод чисел в строки</h2>
                     <pre>
-                       <code data-trim class="javascript hljs">
+                       <code data-trim contenteditable class="javascript hljs">
 str = num.toString(0);
 str = String(num);
                         </code>
@@ -699,7 +708,7 @@ str = String(num);
                 <section>
                     <h2>Перевод строк в числа</h2>
                     <pre>
-                       <code data-trim class="javascript hljs">
+                       <code data-trim contenteditable class="javascript hljs">
 num = Number(str);
 num = +str;
 num = parseInt(str);
@@ -735,7 +744,7 @@ num = parseInt(str);
                 <section>
                     <h2>Длина строки</h2>
                     <pre>
-                       <code data-trim class="javascript hljs">
+                       <code data-trim contenteditable class="javascript hljs">
 string.length
                     </code>
                     </pre>
@@ -788,7 +797,7 @@ string.length
                 <section>
                     <h2>trim</h2>
                     <pre>
-                       <code data-trim class="javascript hljs">
+                       <code data-trim contenteditable class="javascript hljs">
 if (typeof String.prototype.trim !== 'function') {
     String.prototype.trim = function() {
         return this.replace(/^\s+|\s+$/g, '');
@@ -808,7 +817,7 @@ if (typeof String.prototype.trim !== 'function') {
                 <section>
                     <h2>supplant</h2>
                     <pre>
-                       <code data-trim class="javascript hljs">
+                       <code data-trim contenteditable class="javascript hljs">
 if (typeof String.prototype.supplant !== 'function') {
     String.prototype.supplant = function (o) { 
         return this.replace( 
@@ -872,7 +881,7 @@ if (typeof String.prototype.supplant !== 'function') {
                         <li>Это значение на 1 больше последнего значимого индекса</li>
                         <li>Это позволяет использовать традиционный for:
                             <pre>
-                       <code data-trim class="javascript hljs">
+                       <code data-trim contenteditable class="javascript hljs">
 for (var i = 0; i < a.length; i += 1) {
     ...
 }
@@ -896,14 +905,14 @@ for (var i = 0; i < a.length; i += 1) {
                         <li>[]</li>
                         <li>Может содержать любое количество выражений, разделенных запятыми:
                             <pre>
-                       <code data-trim class="javascript hljs">
+                       <code data-trim contenteditable class="javascript hljs">
 myList = ['cats', 'peas', 'beans'];
                     </code>
                     </pre>
                         </li>
                         <li>Можно добавлять новые значения:
                             <pre>
-                       <code data-trim class="javascript hljs">
+                       <code data-trim contenteditable class="javascript hljs">
 myList[myList.length] = 'barley';
                     </code>
                     </pre>
@@ -955,7 +964,7 @@ myList[myList.length] = 'barley';
                 <section>
                     <h2>sort</h2>
                     <pre>
-                       <code data-trim class="javascript hljs">
+                       <code data-trim contenteditable class="javascript hljs">
 var n = [4, 8, 15, 16, 23, 42];
 n.sort() // => [15, 16, 23, 4, 42, 8];
                     </code>
@@ -970,7 +979,7 @@ n.sort() // => [15, 16, 23, 4, 42, 8];
                 <section>
                     <h2>Удаление элементов</h2>
                     <pre>
-                       <code data-trim class="javascript hljs">
+                       <code data-trim contenteditable class="javascript hljs">
 delete array[number]
 
                     </code>
@@ -978,7 +987,7 @@ delete array[number]
                     <p>Удаляет элемент, но оставляет дыру в нумерации</p>
 
                     <pre>
-                       <code data-trim class="javascript hljs">
+                       <code data-trim contenteditable class="javascript hljs">
 array.splice(number, 1)
 
                     </code>
@@ -993,7 +1002,7 @@ array.splice(number, 1)
                 <section>
                     <h2>Пример</h2>
                     <pre>
-                       <code data-trim class="javascript hljs">
+                       <code data-trim contenteditable class="javascript hljs">
 myArray = ['a', 'b', 'c', 'd'];
 delete myArray[1]; // ['a', undefined, 'c', 'd']
 myArray.splice(1, 1); // ['a', 'c', 'd']
@@ -1191,7 +1200,7 @@ myArray.splice(1, 1); // ['a', 'c', 'd']
                 <section>
                     <h2>унарный +</h2>
                     <pre>
-                       <code data-trim class="javascript hljs">
+                       <code data-trim contenteditable class="javascript hljs">
 +"42" + (+"42") === 84
                     </code>
                     </pre>
@@ -1208,7 +1217,7 @@ myArray.splice(1, 1); // ['a', 'c', 'd']
                     <ul>
                         <li>Деление двух целых может давать нецелое</li>
                         <pre>
-                       <code data-trim class="javascript hljs">
+                       <code data-trim contenteditable class="javascript hljs">
 10 / 3 = 3.3333333333333335
 10 / 0 = Infinity
                     </code>
@@ -1226,7 +1235,7 @@ myArray.splice(1, 1); // ['a', 'c', 'd']
                     <ul>
                         <li>Остаток от деления</li>
                         <pre>
-                       <code data-trim class="javascript hljs">
+                       <code data-trim contenteditable class="javascript hljs">
 -1 % 8 // -1, не 7
                     </code>
                     </pre>
@@ -1306,7 +1315,7 @@ myArray.splice(1, 1); // ['a', 'c', 'd']
                         <li>Логическое И</li>
                         <li>Если первое выражение truthy, результат - второй оператор, иначе - первый.</li>
                         <pre>
-                       <code data-trim class="javascript hljs">
+                       <code data-trim contenteditable class="javascript hljs">
 // чтобы избежать ссылки на null
 if (a) {
     return a.number;
@@ -1330,7 +1339,7 @@ return a && a.number
                     <ul>
                         <li>Оператор "по умолчанию", логическое ИЛИ
                             <pre>
-                       <code data-trim class="javascript hljs">
+                       <code data-trim contenteditable class="javascript hljs">
 var last = input || nr_items;
                     </code>
                     </pre>
@@ -1398,7 +1407,7 @@ var last = input || nr_items;
                     <h2>Break</h2>
 
                     <pre>
-                       <code data-trim class="javascript hljs">
+                       <code data-trim contenteditable class="javascript hljs">
 loop: for (;;) {
     ...
         if (...) {
@@ -1418,7 +1427,7 @@ loop: for (;;) {
                     <h2>For</h2>
 
                     <pre>
-                       <code data-trim class="javascript hljs">
+                       <code data-trim contenteditable class="javascript hljs">
 for (i = 0; i < array.length; i += 1) {
     // array[i] - текущий элемент массива для каждой итерации
 }
@@ -1434,7 +1443,7 @@ for (i = 0; i < array.length; i += 1) {
                     <h2>For in</h2>
 
                     <pre>
-                       <code data-trim class="javascript hljs">
+                       <code data-trim contenteditable class="javascript hljs">
 for (name in object) {
     if (object.hasOwnProperty(name)) {
         // name - это ключ объекта
@@ -1467,7 +1476,7 @@ for (name in object) {
                     <h2>Switch</h2>
 
                     <pre>
-                       <code data-trim class="javascript hljs">
+                       <code data-trim contenteditable class="javascript hljs">
 switch (expression) {
     case ';':
     case ',':
@@ -1489,7 +1498,7 @@ switch (expression) {
                     <h2>Throw</h2>
 
                     <pre>
-                       <code data-trim class="javascript hljs">
+                       <code data-trim contenteditable class="javascript hljs">
 throw new Error(reasons);
 
 throw {
@@ -1507,7 +1516,7 @@ throw {
                     <h2>Try/catch</h2>
 
                     <pre>
-                       <code data-trim class="javascript hljs">
+                       <code data-trim contenteditable class="javascript hljs">
 try {
     ...
 } catch (e) {
@@ -1529,7 +1538,7 @@ try {
                 <section>
                     <h2>With - не используйте это</h2>
                     <pre>
-                       <code data-trim class="javascript hljs">
+                       <code data-trim contenteditable class="javascript hljs">
 with (o) {
     foo = coda;
 }
@@ -1604,7 +1613,7 @@ with (o) {
                     <h2>Два варианта определения функции</h2>
 
                     <pre>
-                       <code data-trim class="javascript hljs">
+                       <code data-trim contenteditable class="javascript hljs">
 function foo() {
     ...
 }
@@ -1612,7 +1621,7 @@ function foo() {
                     </pre>
 
                     <pre>
-                       <code data-trim class="javascript hljs">
+                       <code data-trim contenteditable class="javascript hljs">
 var foo = function foo() {
     ...
 }
@@ -1637,7 +1646,7 @@ var foo = function foo() {
                 <section>
                     <h2>return</h2>
                     <pre>
-                       <code data-trim class="javascript hljs">
+                       <code data-trim contenteditable class="javascript hljs">
 return expression;
 
 return; // undefined, кроме конструкторов (this)
@@ -1686,14 +1695,14 @@ return; // undefined, кроме конструкторов (this)
                     <ul>
                         <li>как функция
                             <pre>
-                       <code data-trim class="javascript hljs">
+                       <code data-trim contenteditable class="javascript hljs">
 functionObject(arguments);
                     </code>
                     </pre>
                         </li>
                         <li>как метод
                             <pre>
-                       <code data-trim class="javascript hljs">
+                       <code data-trim contenteditable class="javascript hljs">
 thisObject.methodName(arguments);
 thisObject["methodName"](arguments);
                     </code>
@@ -1701,7 +1710,7 @@ thisObject["methodName"](arguments);
                         </li>
                         <li>конструктор
                             <pre>
-                       <code data-trim class="javascript hljs">
+                       <code data-trim contenteditable class="javascript hljs">
 thisObject.methodName(arguments);
 thisObject["methodName"](arguments);
                     </code>
@@ -1710,7 +1719,7 @@ thisObject["methodName"](arguments);
                         </li>
                         <li>Apply
                             <pre>
-                       <code data-trim class="javascript hljs">
+                       <code data-trim contenteditable class="javascript hljs">
 functionObject.apply(thisObject, [arguments]);
                     </code>
                     </pre>
@@ -1737,7 +1746,7 @@ functionObject.apply(thisObject, [arguments]);
                     <h2>Замыкания</h2>
 
                     <pre>
-                       <code data-trim class="javascript hljs">
+                       <code data-trim contenteditable class="javascript hljs">
 var digit_names = (function() {
     var names = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
 
@@ -1844,8 +1853,27 @@ digit_names(3); // three
                     </aside>
                 </section>
                 <section>
-                    <h2></h2>
+                    <h2>Файловая структура проекта</h2>
 
+<pre>
+                       <code data-trim contenteditable class="javascript hljs">
+.
+|-- Gruntfile.js
+|-- package.json
+|-- app.js
+|-- secret.json
+|-- index.html
+|-- data.json
+|-- dev
+|   `-- js
+|-- public
+    |-- js
+    |-- lowres
+    `-- thumbs
+
+
+                    </code>
+                    </pre>
 
                     <aside class="notes">
 
