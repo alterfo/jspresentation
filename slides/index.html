@@ -82,6 +82,14 @@
 
             </section>
 
+            <section>
+                <h2>Разминка</h2>
+
+                <aside class="notes">
+                    Разминка - поднимите руки те, кто - пьет много кофе - понимает зачем и куда пришел - больше 10 часов в выходные провел за компьютером. - считает что JavaScript это почти то же самое что и Java - сам сделал хоть один сайт Каждый скажет зачем пришел и что хочет вынести.
+                </aside>
+            </section>
+
 
             <section>
                 <section>
@@ -100,7 +108,7 @@
                     <h3>1890</h3>
                     <img src="i/punchcardH.jpg" alt="">
                     <aside class="notes">
-                        Табуля́тор — электромеханическая машина, предназначенная для автоматической обработки (суммирования и категоризации) числовой и буквенной информации, записанной на перфокартах, с выдачей результатов на бумажную ленту или специальные бланки.
+                        Герман Холлерит. Табуля́тор — электромеханическая машина, предназначенная для автоматической обработки (суммирования и категоризации) числовой и буквенной информации, записанной на перфокартах, с выдачей результатов на бумажную ленту или специальные бланки.
                     </aside>
                 </section>
                 <section>
@@ -135,19 +143,6 @@
                     <aside class="notes">
                         Телетайпер - del, backspace IBM 3270 - первый терминал с дисплеем. Нужно было набрать блок информации и нажать кнопку Submit.
                     </aside>
-                </section>
-
-                <section>
-                    <ul>
-                        <li>ASCII - только английский, только прописные</li>
-                        <li>UNICODE</li>
-                        <li>UTF-8</li>
-                        <li>crlf - Carriage Return Linefeed (hardware + human)</li>
-                    </ul>
-                    <aside class="notes">
-                        Linefeed - вручную открутить бумагу. В html до сих пор используется crlf На механических пишущих машинках был рычаг, который возвращал каретку к левому краю страницы и прокручивал вал, подвигая бумагу вверх на строку. На телетайпах и более поздних алфавитно-цифровых печатающих устройствах (АЦПУ) вместо каретки была головка, в лазерных принтерах она перестала быть материальной, но в термине возврат каретки всё это продолжали называть кареткой, чтобы его не менять. На телетайпах возврат каретки и подачу строки разделили, откуда традиция представления перевода строки как CR+LF перешла и к текстовым файлам.
-                    </aside>
-
                 </section>
 
                 <section>
@@ -298,6 +293,14 @@
                     </ul>
                     <aside class="notes">
                         Браузеры, HTML5, стандарты, технологии.
+                        <h2>Предпосылки Web 2.0</h2>
+                        <ul>
+                            <li>Скорость соединений росла...</li>
+                            <li>Javascript, XML, JSON, AJAX</li>
+                            <li>I-, P-, S- aaS. Облачные технологии.</li>
+                            <li>Мобильные платформы и приложения.</li>
+                            <li>Метаданные, связанные данные и машинная интеллектуальная обработка.</li>
+                        </ul>
                     </aside>
                 </section>
 
@@ -307,43 +310,10 @@
                 </section>
 
                 <section>
-                    <h2>Предпосылки Web 2.0</h2>
-                    <ul>
-                        <li>Скорость соединений росла...</li>
-                        <li>Javascript, XML, JSON, AJAX</li>
-                        <li>I-, P-, S- aaS. Облачные технологии.</li>
-                        <li>Мобильные платформы и приложения.</li>
-                        <li>Метаданные, связанные данные и машинная интеллектуальная обработка.</li>
-                    </ul>
-                    <aside class="notes">
-
-                    </aside>
-                </section>
-
-                <section>
                     <h2>Настоящее и будущее Frontend</h2>
                     <a href="i/proFrontend.pdf">Развитие frontend-разработки на примере Yahoo</a>
                 </section>
-            </section>
 
-
-
-            <section data-background="#3498DB">
-
-
-
-
-                <section>
-                    <h2></h2>
-                    <ul>
-                        <li>Сегодня мы рассмотрим базовые архитектурные модели и протоколы, которые используются в современной разработке</li>
-                        <li>Далее мы рассмотрим одну из этих моделей более подробно</li>
-                        <li>Построим "простое" приложение используя современный workflow</li>
-                    </ul>
-                    <aside class="notes">
-
-                    </aside>
-                </section>
 
                 <section>
                     <img src="i/client-server.png" alt="">
@@ -417,18 +387,7 @@
             </section>
 
 
-            <section data-background="#F1C40F">
-                <h2>Среда разработки</h2>
-                <ul>
-                    <li>Браузер Google Chrome/Firefox (+firebug)</li>
-                    <li>Текстовый редактор с подсветкой синтаксиса и расширениями (Sublime Text 2 / Notepad++)</li>
-                    <li>Командная строка + <a href="http://nodejs.org/">nodejs</a>
-                    </li>
-                    <li>Система контроля версий (Git/Mercurial)</li>
-                    <li>Структура файлов и система сборки (grunt, bower, yeoman)</li>
 
-                </ul>
-            </section>
 
             <section data-background="#000" style="color:#fff">
                 <section>
@@ -442,17 +401,17 @@
                 <section>
                     <h1>{}</h1>
                     <ul>
-                        <li><b>get:</b>
+                        <li><b>прочитать:</b>
                         </li>
                         <p>object.name</p>
                         <p>object[expression]
                         </p>
-                        <li><b>set:</b>
+                        <li><b>записать:</b>
                         </li>
                         <p>object.name = value</p>
                         <p>object[name] = value</p>
 
-                        <li><b>delete:</b>
+                        <li><b>удалить:</b>
                         </li>
                         <p>delete object.name</p>
                         <p>delete object[name]</p>
@@ -565,7 +524,7 @@ if (!Number.prototype.trunc) {
         function trunc(number) {
             return Math[
                 number >= 0 ?
-                    'floor' : 'ceil';
+                    'floor' : 'ceil'
                 ](number);
         };
 }
@@ -1054,7 +1013,6 @@ myArray.splice(1, 1); // ['a', 'c', 'd']
                         <li>Используйте объекты когда нужны именованные свойства</li>
                         <li>Используйте массивы когда вам нужна упорядоченность элементов</li>
                         <li>Здесь нет ассоциативных массивов, вместо них - объекты</li>
-                        <li></li>
                     </ul>
                     <aside class="notes">
 
@@ -1190,8 +1148,8 @@ myArray.splice(1, 1); // ['a', 'c', 'd']
                     </aside>
                 </section>
 
-</section>
-<section>
+            </section>
+            <section>
 
 
                 <section>
@@ -1226,7 +1184,7 @@ myArray.splice(1, 1); // ['a', 'c', 'd']
                         <li>Если нет - переводит все в строки и склеивает</li>
                     </ul>
                     <aside class="notes">
-
+                        html не знает ничего о числах, он работает со строками.
                     </aside>
                 </section>
 
@@ -1239,7 +1197,7 @@ myArray.splice(1, 1); // ['a', 'c', 'd']
                     </pre>
 
                     <aside class="notes">
-
+                        Чтобы избежать недоразумений - стоит ставить скобки
                     </aside>
                 </section>
 
@@ -1295,6 +1253,8 @@ myArray.splice(1, 1); // ['a', 'c', 'd']
                     <h2>Примеры</h2>
 
 
+
+
                     <ul>
                         <li>'' == '0' // false</li>
                         <li>0 == '' // true</li>
@@ -1306,6 +1266,32 @@ myArray.splice(1, 1); // ['a', 'c', 'd']
                         <li>null == undefined // true</li>
                         <li>' \t\r\n' == 0 // true</li>
                     </ul>
+                    <aside class="notes">
+                        ===
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Откуда взялось ===</h2>
+
+                    <table>
+                        <tr>
+                            <td>FORTRAN</td>
+                            <td>L = P .EQ. Q</td>
+                        </tr>
+                        <tr>
+                            <td>ALGOL 60</td>
+                            <td>L := P = Q</td>
+                        </tr>
+                        <tr>
+                            <td>BASIC</td>
+                            <td>LET L = P = Q</td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript</td>
+                            <td>l = p === q</td>
+                        </tr>
+                    </table>
                     <aside class="notes">
                         ===
                     </aside>
@@ -1368,28 +1354,30 @@ var last = input || nr_items;
                     </ul>
 
                     <aside class="notes">
-bang-bang
+                        bang-bang
                     </aside>
                 </section>
                 <section>
                     <h2>Побитовые операторы</h2>
-                    <p>& | ^ >> >>> <<</p>
-                    <ul>
-                        <li>Побитовые операторы конвертируют операнды в 32-битное целое число и возвращают результат в виде 64-битного float</li>
-                    </ul>
+                    <p>& | ^ >> >>>
+                        <<</p>
+                            <ul>
+                                <li>Побитовые операторы конвертируют операнды в 32-битное целое число и возвращают результат в виде 64-битного float</li>
+                            </ul>
 
-                    <aside class="notes">
-shift иногда быстрее умножения
-                    </aside>
+                            <aside class="notes">
+                                shift не быстрее умножения
+                            </aside>
                 </section>
-</section>
-<section>
+            </section>
+            <section>
 
                 <section>
                     <h2>Выражения</h2>
 
                     <ul>
-                        <li><i>expression</i></li>
+                        <li><i>expression</i>
+                        </li>
                         <li>if</li>
                         <li>switch</li>
                         <li>while</li>
@@ -1407,7 +1395,449 @@ shift иногда быстрее умножения
                 </section>
 
                 <section>
-                    <h2></h2>
+                    <h2>Break</h2>
+
+                    <pre>
+                       <code data-trim class="javascript hljs">
+loop: for (;;) {
+    ...
+        if (...) {
+            break loop;
+        }
+    ...
+}
+                    </code>
+                    </pre>
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>For</h2>
+
+                    <pre>
+                       <code data-trim class="javascript hljs">
+for (i = 0; i < array.length; i += 1) {
+    // array[i] - текущий элемент массива для каждой итерации
+}
+                    </code>
+                    </pre>
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>For in</h2>
+
+                    <pre>
+                       <code data-trim class="javascript hljs">
+for (name in object) {
+    if (object.hasOwnProperty(name)) {
+        // name - это ключ объекта
+        // object[name] - текущее значение
+    }
+}
+                    </code>
+                    </pre>
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Switch</h2>
+
+                    <ul>
+                        <li>Многомерный if</li>
+                        <li>Значение может быть строкой</li>
+                        <li>В case могут быть выражения</li>
+                        <li>Осторожно: выражения "падают" через последующие case пока не встретят break</li>
+                    </ul>
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+                <section>
+                    <h2>Switch</h2>
+
+                    <pre>
+                       <code data-trim class="javascript hljs">
+switch (expression) {
+    case ';':
+    case ',':
+    case '.':
+        punctuation();
+        break;
+    default:
+        noneOfTheAbove();
+}
+                    </code>
+                    </pre>
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Throw</h2>
+
+                    <pre>
+                       <code data-trim class="javascript hljs">
+throw new Error(reasons);
+
+throw {
+    name: exceptionName,
+    message: reason
+};
+                    </code>
+                    </pre>
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+                <section>
+                    <h2>Try/catch</h2>
+
+                    <pre>
+                       <code data-trim class="javascript hljs">
+try {
+    ...
+} catch (e) {
+    switch (e.name) {
+        case 'Error':
+            ...
+            break;
+        default:
+            throw e;
+    }
+}
+                    </code>
+                    </pre>
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+                <section>
+                    <h2>With - не используйте это</h2>
+                    <pre>
+                       <code data-trim class="javascript hljs">
+with (o) {
+    foo = coda;
+}
+                    </code>
+                    </pre>
+                    <input type="checkbox">o.foo = coda;</br>
+                    <input type="checkbox">o.foo = o.coda;</br>
+                    <input type="checkbox">foo = coda;</br>
+                    <input type="checkbox">foo = o.coda;</br>
+
+                    <aside class="notes">
+                        любое with и eval - удалены из ES5
+                    </aside>
+                </section>
+
+            </section>
+            <section>
+
+
+
+                <section>
+                    <h2>Функции</h2>
+
+                    <aside class="notes">
+                        В других языках - Метод, Модуль, Класс, Конструктор. В JS все это - в функциях. reusable, модульность, рекурсия
+                    </aside>
+                </section>
+                <section>
+                    <h2>Определение функции</h2>
+
+                    <ul>
+                        <li>function</li>
+                        <li>опционально - имя</li>
+                        <li>0 или более параметров разделенных запятой в ()</li>
+                        <li>Тело функции {}</li>
+                    </ul>
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+                <section>
+                    <h2>Определение функции</h2>
+
+                    <ul>
+                        <li>Создается новый экземпляр объекта Function</li>
+                        <li>Функция может быть передана параметром функции, храниться в переменной, объекте или массиве</li>
+                        <li>В функциях есть методы и они могут наследоваться от других объектов через Function.prototype</li>
+                    </ul>
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+                <section>
+                    <h2>var</h2>
+
+                    <ul>
+                        <li>Декларирует и инициализирует переменную внутри функции</li>
+                        <li>Тип не указывается</li>
+                        <li>Переменная, созданная внутри функции видна везде внутри этой функции</li>
+                    </ul>
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+
+
+                <section>
+                    <h2>Два варианта определения функции</h2>
+
+                    <pre>
+                       <code data-trim class="javascript hljs">
+function foo() {
+    ...
+}
+                    </code>
+                    </pre>
+
+                    <pre>
+                       <code data-trim class="javascript hljs">
+var foo = function foo() {
+    ...
+}
+                    </code>
+                    </pre>
+
+
+                    <aside class="notes">
+                        function нельзя вставлять в if
+                    </aside>
+                </section>
+                <section>
+                    <h2>Scope</h2>
+
+                    <p>В JS нет блочной области видимости, только функции.</p>
+
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+                <section>
+                    <h2>return</h2>
+                    <pre>
+                       <code data-trim class="javascript hljs">
+return expression;
+
+return; // undefined, кроме конструкторов (this)
+                    </code>
+                    </pre>
+
+
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+                <section>
+                    <h2>arguments, this</h2>
+
+                    <ul>
+                        <li>arguments - специальный параметр, содержащий переданные аргументы</li>
+                        <li>Это псевдо-массив и не содержит методов массива (в es5 - содержит)</li>
+                        <li>arguments.length</li>
+                        <li>this - содержит ссылку на объект вызова</li>
+                        <li>this - позволяет методу знать из какого объекта он запущен</li>
+                        <li>this - ключевая вещь в прототипном наследовании</li>
+                    </ul>
+
+
+                    <aside class="notes">
+                        два псевдопараметра, this - ужасное имя, о нем сложно говорить (на английском)
+                    </aside>
+                </section>
+                <section>
+                    <h2>Вызов функции</h2>
+                    <ul>
+                        <li>Если аргументов много - лишние игнорируются</li>
+                        <li>Если мало - недостающие = undefined</li>
+                        <li>Нет проверки типов</li>
+                    </ul>
+
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+                <section>
+                    <h2>4 формы вызова</h2>
+
+                    <ul>
+                        <li>как функция
+                            <pre>
+                       <code data-trim class="javascript hljs">
+functionObject(arguments);
+                    </code>
+                    </pre>
+                        </li>
+                        <li>как метод
+                            <pre>
+                       <code data-trim class="javascript hljs">
+thisObject.methodName(arguments);
+thisObject["methodName"](arguments);
+                    </code>
+                    </pre>
+                        </li>
+                        <li>конструктор
+                            <pre>
+                       <code data-trim class="javascript hljs">
+thisObject.methodName(arguments);
+thisObject["methodName"](arguments);
+                    </code>
+                    </pre>
+                            new FunctionObject(arguments);
+                        </li>
+                        <li>Apply
+                            <pre>
+                       <code data-trim class="javascript hljs">
+functionObject.apply(thisObject, [arguments]);
+                    </code>
+                    </pre>
+                        </li>
+                    </ul>
+
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+                <section>
+                    <h2>Стэк</h2>
+
+                    <h3>++</h3>
+                    <h3>--</h3>
+
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+                <section>
+                    <h2>Замыкания</h2>
+
+                    <pre>
+                       <code data-trim class="javascript hljs">
+var digit_names = (function() {
+    var names = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
+
+    return function(n) {
+        return names[n];
+    }
+})();
+
+digit_names(3); // three
+                    </code>
+                    </pre>
+
+
+                    <aside class="notes">
+                        благодаря замыканиям возможна анимация одновременно у многих элементов.
+                    </aside>
+                </section>
+            </section>
+            <section data-background="#F1C40F">
+
+
+
+                <section>
+                    <h2>Этапы создания приложения</h2>
+
+                    <ul>
+                        <li>Описание проблемы</li>
+                        <li>Определение требований</li>
+                        <li>Разработка архитектуры</li>
+                    </ul>
+
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Среда разработки</h2>
+                    <ul>
+                        <li>Браузер Google Chrome</li>
+                        <li>Текстовый редактор с подсветкой синтаксиса и расширениями (Sublime Text 2)</li>
+                        <li>Командная строка + <a href="http://nodejs.org/">nodejs</a>
+                        </li>
+                        <li>Система контроля версий Git</li>
+                        <li>Утилиты для работы с структурой файлов и системы сборки (grunt, bower, yeoman)</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Установка node.js, npm, git, grunt</h2>
+
+
+
+                    <ul>
+                        <li><a href="http://nodejs.org/download">nodejs.org/download</a>
+                        </li>
+                        <li><a href="http://git-scm.com/download">git-scm.com/download</a>
+                        </li>
+                        <li>$ npm install -g grunt-cli</li>
+                    </ul>
+
+
+
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>package.json</h2>
+
+
+
+                    <ul>
+                        <li>$ npm init</li>
+                        <li>$ npm install grunt --save-dev</li>
+                        <li>$ npm install grunt-contrib-watch --save-dev</li>
+                        <li>npm install express --save</li>
+                    </ul>
+
+
+
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+
+                <section>
+                    <h2>Gruntfile.js</h2>
+
+                    <ul>
+                        <li><a href="http://gruntjs.com/getting-started">Grunt</a> - менеджер задач</li>
+                        <li>Есть множество дополнительных модулей под разные зедачи - сборка, минификация, проверка на ошибки</li>
+                        <li>Мы воспользуемся двумя модулями - connect для создания сервера и watch для автоматической перезагрузки страницы при сохранении</li>
+                    </ul>
+
 
                     <aside class="notes">
 
@@ -1416,12 +1846,6 @@ shift иногда быстрее умножения
                 <section>
                     <h2></h2>
 
-                    <aside class="notes">
-
-                    </aside>
-                </section>
-                <section>
-                    <h2></h2>
 
                     <aside class="notes">
 
@@ -1430,12 +1854,6 @@ shift иногда быстрее умножения
                 <section>
                     <h2></h2>
 
-                    <aside class="notes">
-
-                    </aside>
-                </section>
-                <section>
-                    <h2></h2>
 
                     <aside class="notes">
 
@@ -1444,12 +1862,6 @@ shift иногда быстрее умножения
                 <section>
                     <h2></h2>
 
-                    <aside class="notes">
-
-                    </aside>
-                </section>
-                <section>
-                    <h2></h2>
 
                     <aside class="notes">
 
@@ -1458,12 +1870,6 @@ shift иногда быстрее умножения
                 <section>
                     <h2></h2>
 
-                    <aside class="notes">
-
-                    </aside>
-                </section>
-                <section>
-                    <h2></h2>
 
                     <aside class="notes">
 
@@ -1472,12 +1878,6 @@ shift иногда быстрее умножения
                 <section>
                     <h2></h2>
 
-                    <aside class="notes">
-
-                    </aside>
-                </section>
-                <section>
-                    <h2></h2>
 
                     <aside class="notes">
 
@@ -1486,12 +1886,35 @@ shift иногда быстрее умножения
                 <section>
                     <h2></h2>
 
+
                     <aside class="notes">
 
                     </aside>
                 </section>
+                <section>
+                    <h2></h2>
 
 
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+                <section>
+                    <h2></h2>
+
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+                <section>
+                    <h2></h2>
+
+
+                    <aside class="notes">
+
+                    </aside>
+                </section>
 
 
             </section>
@@ -1577,7 +2000,7 @@ shift иногда быстрее умножения
                 ]
             });
              //Current slide you can define via Reveal.getIndices();
-            Reveal.slide(8, 29);
+            Reveal.slide(10, 3);
             </script>
 
 </body>

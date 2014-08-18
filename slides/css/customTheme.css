@@ -69,3 +69,8 @@ pre code.javascript {
   font-size: 1.8em;
   background: #000;
 }
+
+.reveal pre {
+  box-shadow: none;
+  margin: 3px auto;
+}
